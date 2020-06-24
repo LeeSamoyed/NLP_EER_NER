@@ -25,8 +25,16 @@ Configure the code and complete the result recording.
 
 
 ###Fourth: Result analysis
+NER:For topic one, due to the small number of database given, I just get a 
+model that perform well on the trainning dataset. When I used 100% for trainning,
+and 20% for testing, I got the ap 90.72%. As a comparsion I used 80% for 
+traning and 20% for testing, I got the ap about 27.93%.
 
+EER:For topic two, I can just run traing and testing codes, the database is
+provided by a relationship classification match, so I can not training enough
+epochs by using CPU.
 
+Detailed results and configuration please watch in the folders 'EER'','NER' -- INSTALL.md file.
 ###Fifth: Future directions for improvement
 I consider that NLP use LSTM(or GRU) technology, so we can add an attention
  mechanism for getting more semantic information. Because in the process,
